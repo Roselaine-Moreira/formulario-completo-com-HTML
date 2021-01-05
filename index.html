@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário em HTML</title>
+</head>
+
+<body>
+  <h1>Meu Formulário</h1>
+  <p>Este é um formulário de exemplo</p>
+
+
+  <form action="https://www.google.com.br/" enctype="multipart/form-data" method="GET">
+    <!-- enctype="multipart/form-data" para o formulário enviar não só texto mas também dados -->
+    <div>
+      <label for="name">Nome</label>
+      <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
+    </div>
+
+    <div>
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+    </div>
+
+    <div>
+      <label for="cidade">Selecione sua cidade</label>
+      <select name="cidade" id="cidade" required>
+        <option selected value="">Selecione</option>
+        <option value="1">Porto Alegre</option>
+        <option value="2">Canoas</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="foto1">Selecione sua foto</label>
+      <input type="file" name="foto" id="foto1">
+    </div>
+
+    <div>
+      <p>Selecione seu sexo</p>
+      <label for="sexoM"><input name="sexo" type="radio" id="sexoM">Masculino</label>
+      <label for="sexoF"><input name="sexo" type="radio" id="sexoF">Feminino</label>
+    </div>
+
+    <div>
+      <legend>Biografia</legend>
+      <textarea name="areaTexto" cols="30" rows="10" placeholder="Digite sua mensagem aqui" id="msg"></textarea>
+    </div>
+
+    <div>
+      <label for="senha1">Senha</label>
+      <input type="password" name="senha" id="senha1" placeholder="Digite sua senha">
+    </div>
+
+    <div>
+      <label for="oferta">
+        <input type="checkbox" value="sim" name="newlestter" id="oferta">Deseja receber e-mails promocionais?
+      </label>
+    </div>
+
+    <div>
+      <button name="enviar" type="submit" value="1">Enviar
+    </div>
+
+  </form>
+
+</body>
+
+</html>
